@@ -3,6 +3,7 @@ public class enemyBuilder {
         Enemy slime = new Enemy(12,"Slime", new int[][]{{1,2},{1,2}},null,null,null,2,"Gun");
         return  slime;
     }
+    //test
 
 
 }
