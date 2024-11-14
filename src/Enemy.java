@@ -5,26 +5,27 @@ import java.util.Map;
 
 public class Enemy {
 
-    private int health, goldDrop;
+    private int health, status, goldDrop;
     private String name, itemDrop;
 
-    private Map<String, Integer> attack1;
-    private Map<String, Integer> attack2;
-    private Map<String, Integer> attack3;
+    private Map<String, Integer> attack1 = new HashMap<>();
+    private Map<String, Integer> attack2 = new HashMap<>();
+    private Map<String, Integer> attack3 = new HashMap<>();
 
 
+    public void setAttack1(Map<String, Integer> attack1) {
+        this.attack1 = attack1;
 
-   public void setAttack1(String dmg, int dmgNum){
-       this.attack1.put(dmg,dmgNum);
-   }
-
-    public void setAttack2(String dmg, int dmgNum) {
-        this.attack2.put(dmg,dmgNum);
     }
 
-    public void setAttack3(String dmg, int dmgNum) {
-        this.attack3.put(dmg, dmgNum);
+    public void setAttack2(Map<String, Integer> attack2) {
+        this.attack2 = attack2;
     }
+
+    public void setAttack3(Map<String, Integer> attack3) {
+        this.attack3 = attack3;
+    }
+
 
     public void setHealth(int health) {
         this.health = health;
@@ -52,14 +53,14 @@ public class Enemy {
 
     public Map<String, Integer> getAttack3() {return attack3;}
 
-    public Enemy(int health, String name, Map<String, Integer> attack1, Map<String,Integer> attack2, Map<String, Integer> attack3, int goldDrop, String itemDrop){
+
+    public Enemy(int health, String name, int goldDrop, String itemDrop, Map<String, Integer> attack1, Map<String, Integer> attack2, Map<String, Integer> attack3) {
         this.health = health;
+        this.goldDrop = goldDrop;
         this.name = name;
+        this.itemDrop = itemDrop;
         this.attack1 = attack1;
         this.attack2 = attack2;
         this.attack3 = attack3;
-
     }
-
-
 }
