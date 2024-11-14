@@ -5,6 +5,8 @@ public class Main {
 
 
         Enemy a = enemyBuilder.buildSlime();
-        System.out.println(a.getHealth());
+        System.out.println(a.getAttack1());
+
+        Enemy b = enemyBuilder.buildGhost();
     }
 }
