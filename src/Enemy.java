@@ -1,12 +1,13 @@
 
-
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Enemy {
 
-    private int health, status, goldDrop;
+    private int health, goldDrop;
     private String name, itemDrop;
+    private ArrayList<Integer> status;
 
     private Map<String, Integer> attack1 = new HashMap<>();
     private Map<String, Integer> attack2 = new HashMap<>();
