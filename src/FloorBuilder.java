@@ -44,10 +44,10 @@ public class FloorBuilder {
 
             for (String option : options) {
                 if (option.equalsIgnoreCase(response)) {
-                    if (response.equals("Campfire")) {
+                    if (response.equalsIgnoreCase("Campfire")) {
                         //CAMPFIRE CODE HERE
                         validResponse = true;
-                    } else if (response.equals("Shop")) {
+                    } else if (response.equalsIgnoreCase("Shop")) {
                         //SHOP CODE HERE
                         validResponse = true;
                     }
