@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 public class Enemy {
 
-    private int health, goldDrop;
-    private String name, itemDrop;
+    private int health,  goldDrop, itemDrop;
+    private String name;
     private int[][] attack1, attack2, attack3, attack4;
 
     public void setHealth(int health) {
@@ -21,7 +21,7 @@ public class Enemy {
         return name;
     }
 
-    public String getItemDrop() {
+    public int getItemDrop() {
         return itemDrop;
     }
 
@@ -45,7 +45,7 @@ public class Enemy {
 
 
 
-    public Enemy(int health, String name, int[][] attack1, int[][] attack2, int[][] attack3, int[][] attack4, int goldDrop, String itemDrop){
+    public Enemy(int health, String name, int[][] attack1, int[][] attack2, int[][] attack3, int[][] attack4, int goldDrop, int itemDrop){
         this.health = health;
         this.name = name;
         this.attack1 = attack1;
