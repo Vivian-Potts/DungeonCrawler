@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FloorBuilder {
     static int floor = 1;
     static void buildFloor(){
-
+        enemyBuilder enemyBuilder = new enemyBuilder();
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> options = new ArrayList<>();

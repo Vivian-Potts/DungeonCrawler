@@ -17,14 +17,19 @@ public class enemyBuilder {
     }
         public Enemy buildRandom(int floor){
             Random random = new Random();
-            int randomNumber = random.nextInt(2);
+            int randomNumber = random.nextInt(4);
             if (floor == 1){
                 switch (randomNumber) {
                     case (0):
                         return (buildSlime());
 
                     case (1):
-                        return (buildSlime());
+                        return (buildGhost());
+                    case (2):
+                        return (buildSkeleton());
+                    case (3):
+                        return (buildDemon());
+
                 }
             }
             return buildSlime();
